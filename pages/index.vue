@@ -7,7 +7,7 @@ import DressCodeSection from "~/components/sections/DressCodeSection.vue";
 import ScheduleSection from "~/components/sections/ScheduleSection.vue";
 import WishesSection from "~/components/sections/WishesSection.vue";
 import FooterSection from "~/components/sections/FooterSection.vue";
-const locked = ref(false);
+const locked = ref(true);
 
 useHead({
   link: [
