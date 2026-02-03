@@ -1,5 +1,4 @@
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div class="px-[28px] md:px-[70px]">
@@ -11,7 +10,9 @@
         enterTo: 'opacity-100 scale-x-100',
       }"
     >
-      <div class="border-b-[1px] border-[#808080] w-[156px] xl:w-[300px] mx-auto"></div>
+      <div
+        class="border-b-[1px] border-[#808080] w-[156px] xl:w-[300px] mx-auto"
+      ></div>
     </AppReveal>
 
     <AppReveal
@@ -38,7 +39,7 @@
       }"
     >
       <p
-        class="mt-[25px] font-montserrat text-center text-[15px] xl:text-[25px] leading-[170%] text-neutral text-shadow-soft"
+        class="md:max-w-[80%] md:mx-auto mt-[25px] font-montserrat text-center text-[15px] xl:text-[25px] leading-[170%] text-neutral text-shadow-soft"
       >
         В ресторане не предусмотрена детская зона и аниматоры, просим Вас
         заранее позаботиться о том, с кем оставить Вашу кроху на праздничный
@@ -55,7 +56,7 @@
       }"
     >
       <p
-        class="mt-[25px] font-montserrat text-center text-[15px] xl:text-[25px] leading-[170%]  text-neutral text-shadow-soft"
+        class="md:max-w-[80%] md:mx-auto mt-[25px] font-montserrat text-center text-[15px] xl:text-[25px] leading-[170%] text-neutral text-shadow-soft"
       >
         Пожалуйста, воздержитесь от покупки цветов - они недолговечны. Если Вы
         хотите дополнить Ваш основной подарок, приглашаем Вас стать соавтором

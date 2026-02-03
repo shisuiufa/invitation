@@ -12,7 +12,9 @@ import Timeline from "~/components/time-line/Timeline.vue";
         enterTo: 'opacity-100 scale-x-100',
       }"
     >
-      <div class="border-b-[1px] border-[#808080] w-[156px]  xl:w-[300px] mx-auto"></div>
+      <div
+        class="border-b-[1px] border-[#808080] w-[156px] xl:w-[300px] mx-auto"
+      ></div>
     </AppReveal>
 
     <AppReveal

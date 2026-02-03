@@ -7,7 +7,8 @@ import DressCodeSection from "~/components/sections/DressCodeSection.vue";
 import ScheduleSection from "~/components/sections/ScheduleSection.vue";
 import WishesSection from "~/components/sections/WishesSection.vue";
 import FooterSection from "~/components/sections/FooterSection.vue";
-const locked = ref(false);
+
+const locked = ref(true);
 
 useHead({
   link: [
@@ -64,7 +65,6 @@ const unlock = () => {
     >
       <UnlockSection v-if="locked" key="unlock" @unlock="unlock" />
     </Transition>
-
     <Transition
       enter-active-class="transition-opacity duration-1000 ease-in"
       enter-from-class="opacity-0"
@@ -74,7 +74,9 @@ const unlock = () => {
       <div v-if="!locked" class="h-full pb-[12px]">
         <MainSection />
         <UiContainer>
-          <div class="bg-white/70 shadow-soft pb-[57px] xl:pb-[120px] rounded-b-full">
+          <div
+            class="bg-white/70 shadow-soft pb-[57px] xl:pb-[120px] rounded-b-full"
+          >
             <IntroSection />
             <LocationSection class="mt-[29px]" />
             <DressCodeSection class="mt-[35px]" />

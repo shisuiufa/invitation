@@ -12,11 +12,11 @@ export default {
   theme: {
     extend: {
       screens: {
-            sm: "320px",
-            md: "500px",
-            lg: "768px",
-            xl: "900px",
-            "2xl": "1268px",
+        sm: "320px",
+        md: "500px",
+        lg: "768px",
+        xl: "900px",
+        "2xl": "1268px",
       },
       fontFamily: {
         sans: ['"KiwiMaru"', ...defaultTheme.fontFamily.sans],
@@ -24,6 +24,7 @@ export default {
         inter: ['"Inter"', ...defaultTheme.fontFamily.sans],
         anon: ['"Anonymous Pro"', ...defaultTheme.fontFamily.sans],
         merienda: ['"Merienda"', ...defaultTheme.fontFamily.sans],
+        ysa: ['"Ysabeau SC"', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         neutral: {

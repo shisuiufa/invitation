@@ -1,9 +1,5 @@
-<script setup lang="ts">
-
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <div>
-    <img src="" alt="">
-  </div>
+  <img class="object-contain" src="/images/qr.png" alt="qr" />
 </template>

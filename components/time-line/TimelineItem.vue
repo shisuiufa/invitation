@@ -30,10 +30,14 @@ const rightT = {
         :t="leftT"
       >
         <div class="w-min ms-auto pe-[20px] xl:pe-[50px]">
-          <div class="text-[25px] xl:text-[40px] text-black font-montserrat leading-none">
+          <div
+            class="text-[25px] xl:text-[40px] text-black font-montserrat leading-none"
+          >
             {{ item.time }}
           </div>
-          <div class="text-[15px] xl:text-[30px] text-black font-merienda leading-[140%] mt-[5px]">
+          <div
+            class="text-[15px] xl:text-[30px] text-black font-merienda leading-[140%] mt-[5px]"
+          >
             {{ item.label }}
           </div>
         </div>
@@ -53,10 +57,14 @@ const rightT = {
           item.id === 1 ? 'absolute top-[-10px]' : 'absolute bottom-[-10px]'
         "
       >
-        <div class="text-[25px] xl:text-[40px] text-black font-montserrat leading-none">
+        <div
+          class="text-[25px] xl:text-[40px] text-black font-montserrat leading-none"
+        >
           {{ item.time }}
         </div>
-        <div class="text-[15px] xl:text-[30px] text-black font-merienda leading-[140%] mt-[5px]">
+        <div
+          class="text-[15px] xl:text-[30px] text-black font-merienda leading-[140%] mt-[5px]"
+        >
           {{ item.label }}
         </div>
       </AppReveal>

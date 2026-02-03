@@ -1,5 +1,4 @@
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div class="pt-[50px] text-neutral px-[28px] md:px-[70px]">
