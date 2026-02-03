@@ -10,19 +10,19 @@ const items: TimelineItemType[] = [
 </script>
 
 <template>
-  <div class="relative mx-auto w-full max-w-[320px]">
+  <div class="relative mx-auto w-full max-w-[320px] xl:max-w-[600px]">
     <div
       class="absolute left-1/2 top-0 h-full w-px bg-neutral -translate-x-1/2"
     />
 
     <div
-      class="absolute left-1/2 top-0 h-[11px] w-[11px] rounded-full bg-gray -translate-x-1/2"
+      class="absolute left-1/2 top-0 h-[11px] w-[11px] xl:h-[30px] xl:w-[30px] rounded-full bg-gray -translate-x-1/2"
     />
     <div
-      class="absolute left-1/2 top-1/2 h-[11px] w-[11px] rounded-full bg-gray -translate-x-1/2 -translate-y-1/2"
+      class="absolute left-1/2 top-1/2 h-[11px] w-[11px]  xl:h-[30px] xl:w-[30px] rounded-full bg-gray -translate-x-1/2 -translate-y-1/2"
     />
     <div
-      class="absolute left-1/2 bottom-0 h-[11px] w-[11px] rounded-full bg-gray -translate-x-1/2"
+      class="absolute left-1/2 bottom-0 h-[11px] w-[11px] xl:h-[30px] xl:w-[30px] rounded-full bg-gray -translate-x-1/2"
     />
 
     <div class="flex flex-col justify-between h-full">

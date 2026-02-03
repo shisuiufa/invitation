@@ -1,7 +1,8 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+</script>
 
 <template>
-  <div class="px-[28px]">
+  <div class="px-[28px] md:px-[50px] lg:px-[140px]">
     <AppReveal
       :delay="0"
       :t="{
@@ -10,7 +11,7 @@
         enterTo: 'opacity-100 scale-x-100',
       }"
     >
-      <div class="border-b-[1px] border-[#808080] w-[156px] mx-auto"></div>
+      <div class="border-b-[1px] border-[#808080] w-[156px] xl:w-[300px] mx-auto"></div>
     </AppReveal>
 
     <AppReveal
@@ -22,7 +23,7 @@
       }"
     >
       <h1
-        class="mt-[37px] text-[20px] leading-[40px] text-neutral text-center font-montserrat font-semibold text-shadow-soft"
+        class="md:px-[50px] mt-[37px] text-[clamp(15px,5.3vw,20px)] xl:text-[clamp(20px,3.8vw,35px)] leading-[140%] text-neutral text-center font-montserrat font-semibold text-shadow-soft"
       >
         С нетерпением ждём встречи, Ваши
         <br />

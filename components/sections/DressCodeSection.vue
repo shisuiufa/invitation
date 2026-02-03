@@ -1,8 +1,9 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+</script>
 
 <template>
   <div>
-    <div class="px-[28px]">
+    <div class="px-[28px] md:px-[70px]">
       <AppReveal
         :delay="0"
         :t="{
@@ -11,7 +12,7 @@
           enterTo: 'opacity-100 scale-x-100',
         }"
       >
-        <div class="border-b-[1px] border-[#808080] w-[156px] mx-auto"></div>
+        <div class="border-b-[1px] border-[#808080] w-[156px] xl:w-[300px] mx-auto"></div>
       </AppReveal>
 
       <AppReveal
@@ -23,7 +24,7 @@
         }"
       >
         <h1
-          class="mt-[18px] text-[35px] leading-[30px] text-neutral text-center tracking-[-0.15em] text-shadow-soft"
+          class="mt-[18px] text-[clamp(20px,9vw,35px)] xl:text-[clamp(35px,4.3vw,40px)] text-neutral text-center tracking-[-0.15em] text-shadow-soft"
         >
           Дресс-код
         </h1>
@@ -38,7 +39,7 @@
         }"
       >
         <p
-          class="mt-[21px] font-montserrat text-center text-[15px] leading-[25px] text-neutral text-shadow-soft"
+          class="mt-[21px] font-montserrat text-center text-[15px] xl:text-[25px] leading-[170%] text-neutral text-shadow-soft"
         >
           Для нас главное - Ваше присутствие, но мы будем очень рады, если при
           выборе своих нарядов вы поддержите цветовую гамму нашей свадьбы!

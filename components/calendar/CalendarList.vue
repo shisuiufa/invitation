@@ -14,7 +14,7 @@ const list = ref<CalendarItemType[]>([
 
 <template>
   <div
-    class="bg-[#FFFFFF80] border border-[#E0E0E0CC] rounded-full flex justify-center gap-[14px] px-[23px] py-[12px] overflow-auto"
+    class="bg-[#FFFFFF80] border border-[#E0E0E0CC] rounded-full flex justify-center gap-[clamp(8px,3.7vw,14px)] px-[clamp(18px,6vw,23px)] py-[12px] overflow-auto"
   >
     <CalendarItem v-for="(item, idx) in list" :key="idx" :item="item" />
   </div>

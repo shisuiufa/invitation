@@ -29,11 +29,13 @@ const rightT = {
         :threshold="0.35"
         :t="leftT"
       >
-        <div class="text-[25px] text-black font-montserrat leading-none">
-          {{ item.time }}
-        </div>
-        <div class="text-[15px] text-black font-merienda leading-none mt-[5px]">
-          {{ item.label }}
+        <div class="w-min ms-auto pe-[20px] xl:pe-[50px]">
+          <div class="text-[25px] xl:text-[40px] text-black font-montserrat leading-none">
+            {{ item.time }}
+          </div>
+          <div class="text-[15px] xl:text-[30px] text-black font-merienda leading-[140%] mt-[5px]">
+            {{ item.label }}
+          </div>
         </div>
       </AppReveal>
     </div>
@@ -41,7 +43,7 @@ const rightT = {
 
     <div
       v-if="item.side === 'right'"
-      class="w-1/2 h-[79px] ps-[20px] text-left relative"
+      class="w-1/2 h-[79px] xl:h-[150px] ps-[20px] xl:ps-[50px] text-left relative"
     >
       <AppReveal
         :delay="delay"
@@ -51,10 +53,10 @@ const rightT = {
           item.id === 1 ? 'absolute top-[-10px]' : 'absolute bottom-[-10px]'
         "
       >
-        <div class="text-[25px] text-black font-montserrat leading-none">
+        <div class="text-[25px] xl:text-[40px] text-black font-montserrat leading-none">
           {{ item.time }}
         </div>
-        <div class="text-[15px] text-black font-merienda leading-none mt-[5px]">
+        <div class="text-[15px] xl:text-[30px] text-black font-merienda leading-[140%] mt-[5px]">
           {{ item.label }}
         </div>
       </AppReveal>

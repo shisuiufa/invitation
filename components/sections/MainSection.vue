@@ -16,15 +16,15 @@ onMounted(() => {
         enter-from-class="opacity-0 translate-y-6"
         enter-to-class="opacity-100 translate-y-0"
       >
-        <div v-if="show" class="pt-[10vh] flex gap-[30px]">
-          <h1 class="ms-5 text-[55px] leading-[130%] text-neutral text-center">
+        <div v-if="show" class="pt-[10vh] flex gap-[30px] lg:gap-[50px]">
+          <h1 class="ms-[15px] text-[55px] leading-[130%] lg:text-[110px] lg:ms-[50px] xl:text-[150px] xl:ms-[50px] text-neutral text-center">
             12 <br />
             06 <br />
             26
           </h1>
           <div class="border border-neutral mt-[10%] pb-[5%]"></div>
           <div class="relative w-full">
-            <h2 class="text-[25px] absolute bottom-[-11%] text-neutral">
+            <h2 class="text-[25px] lg:text-[40px] xl:text-[60px] absolute bottom-[-11%] text-neutral">
               Save the date
             </h2>
           </div>
@@ -38,10 +38,10 @@ onMounted(() => {
       >
         <div
           v-if="show"
-          class="mt-[81px] pt-[48px] grow bg-white/70 shadow-softNoBottom rounded-t-full"
+          class="mt-[81px] pt-[48px] lg:mt-[100px] lg:pt-[60px] xl:mt-[150px] xl:pt-[70px] grow bg-white/70 shadow-softNoBottom rounded-t-full"
         >
           <h2
-            class="text-center text-[30px] leading-[40px] text-neutral text-shadow-soft"
+            class="text-center text-[30px] leading-[40px] lg:text-[40px] lg:leading-[50px] xl:text-[60px] xl:leading-[120%] text-neutral text-shadow-soft"
           >
             Антон <br />
             & <br />

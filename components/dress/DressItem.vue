@@ -8,7 +8,7 @@ defineProps<{
 
 <template>
   <div
-    class="w-[50px] h-[50px] rounded-full"
+    class="w-[clamp(30px,13vw,50px)] h-[clamp(30px,13vw,50px)] xl:w-[clamp(30px,7.5vw,70px)] xl:h-[clamp(30px,7.5vw,70px)] rounded-full"
     :style="{ backgroundColor: item.color }"
   ></div>
 </template>

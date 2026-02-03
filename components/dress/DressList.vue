@@ -22,7 +22,7 @@ const list = ref<DressItemType[]>([
 </script>
 
 <template>
-  <div class="flex justify-center gap-[12px]">
+  <div class="flex justify-center gap-[clamp(7px,3.2vw,12px)]">
     <DressItem v-for="(item, idx) in list" :key="idx" :item="item" />
   </div>
 </template>

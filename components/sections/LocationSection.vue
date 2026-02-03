@@ -5,7 +5,7 @@ const openMap = () => {
 </script>
 
 <template>
-  <div class="px-[28px]">
+  <div class="px-[28px] md:px-[70px]">
     <AppReveal
       :delay="0"
       :t="{
@@ -14,7 +14,7 @@ const openMap = () => {
         enterTo: 'opacity-100 scale-x-100',
       }"
     >
-      <div class="border-b-[1px] border-[#808080] w-[156px] mx-auto"></div>
+      <div class="border-b-[1px] border-[#808080] w-[156px] xl:w-[300px] mx-auto"></div>
     </AppReveal>
 
     <AppReveal
@@ -26,7 +26,7 @@ const openMap = () => {
       }"
     >
       <h1
-        class="mt-[18px] text-[35px] text-neutral text-center tracking-tighter text-shadow-soft"
+        class="mt-[18px] text-[clamp(20px,9vw,35px)] xl:text-[clamp(35px,4.3vw,40px)] text-neutral text-center tracking-tighter text-shadow-soft"
       >
         Локация
       </h1>
@@ -41,7 +41,7 @@ const openMap = () => {
       }"
     >
       <img
-        class="mt-[22px] h-[185px] object-cover rounded-[25px] mx-auto"
+        class="mt-[22px] h-[185px] xl:h-[350px] object-cover rounded-[25px] mx-auto"
         src="/images/location.png"
         alt="location"
       />
@@ -56,7 +56,7 @@ const openMap = () => {
       }"
     >
       <p
-        class="mt-[25px] font-montserrat text-center text-[15px] leading-[25px] text-neutral text-shadow-soft"
+        class="mt-[25px] font-montserrat text-center text-[15px] xl:text-[25px] leading-[170%] text-neutral text-shadow-soft"
       >
         Торжество состоится в ресторане “Юна” по адресу г.Уфа, ул. Менделеева,
         160/9

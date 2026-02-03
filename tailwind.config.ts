@@ -11,6 +11,13 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+            sm: "320px",
+            md: "500px",
+            lg: "768px",
+            xl: "900px",
+            "2xl": "1268px",
+      },
       fontFamily: {
         sans: ['"KiwiMaru"', ...defaultTheme.fontFamily.sans],
         montserrat: ['"Montserrat"', ...defaultTheme.fontFamily.sans],

@@ -3,7 +3,7 @@ import Timeline from "~/components/time-line/Timeline.vue";
 </script>
 
 <template>
-  <div class="px-[28px]">
+  <div class="px-[28px] md:px-[70px]">
     <AppReveal
       :delay="0"
       :t="{
@@ -12,7 +12,7 @@ import Timeline from "~/components/time-line/Timeline.vue";
         enterTo: 'opacity-100 scale-x-100',
       }"
     >
-      <div class="border-b-[1px] border-[#808080] w-[156px] mx-auto"></div>
+      <div class="border-b-[1px] border-[#808080] w-[156px]  xl:w-[300px] mx-auto"></div>
     </AppReveal>
 
     <AppReveal
@@ -24,7 +24,7 @@ import Timeline from "~/components/time-line/Timeline.vue";
       }"
     >
       <h1
-        class="mt-[18px] text-[35px] leading-[40px] tracking-[-0.15em] text-neutral text-center text-shadow-soft"
+        class="mt-[18px] text-[clamp(20px,9vw,35px)] xl:text-[clamp(35px,4.3vw,40px)] tracking-[-0.15em] text-neutral text-center text-shadow-soft"
       >
         Программа <br />
         дня

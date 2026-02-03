@@ -7,7 +7,7 @@ import DressCodeSection from "~/components/sections/DressCodeSection.vue";
 import ScheduleSection from "~/components/sections/ScheduleSection.vue";
 import WishesSection from "~/components/sections/WishesSection.vue";
 import FooterSection from "~/components/sections/FooterSection.vue";
-const locked = ref(true);
+const locked = ref(false);
 
 useHead({
   link: [
@@ -74,13 +74,13 @@ const unlock = () => {
       <div v-if="!locked" class="h-full pb-[12px]">
         <MainSection />
         <UiContainer>
-          <div class="bg-white/70 shadow-soft pb-[57px] rounded-b-full">
+          <div class="bg-white/70 shadow-soft pb-[57px] xl:pb-[120px] rounded-b-full">
             <IntroSection />
             <LocationSection class="mt-[29px]" />
             <DressCodeSection class="mt-[35px]" />
             <ScheduleSection class="mt-[43px]" />
             <WishesSection class="mt-[57px]" />
-            <FooterSection class="mt-[57px]" />
+            <FooterSection class="mt-[37px]" />
           </div>
         </UiContainer>
       </div>

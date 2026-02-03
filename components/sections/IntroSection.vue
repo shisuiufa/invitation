@@ -1,7 +1,8 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+</script>
 
 <template>
-  <div class="pt-[50px] text-neutral px-[28px]">
+  <div class="pt-[50px] text-neutral px-[28px] md:px-[70px]">
     <AppReveal
       :delay="120"
       :t="{
@@ -11,7 +12,7 @@
       }"
     >
       <h1
-        class="text-[20px] leading-[30px] text-center font-normal tracking-[-0.15em] text-shadow-soft"
+        class="text-[clamp(17px,5.3vw,20px)] leading-[130%] xl:text-[clamp(30px,3.7vw,35px)] text-center font-normal tracking-normal text-shadow-soft"
       >
         Дорогие родные и друзья!
       </h1>
@@ -26,7 +27,7 @@
       }"
     >
       <p
-        class="text-center font-montserrat text-[15px] mt-[20px] text-shadow-soft"
+        class="text-center font-montserrat text-[15px] xl:text-[25px] mt-[20px] leading-[170%] text-shadow-soft"
       >
         Совсем скоро состоится очень важное и радостное для нас событие - наша
         свадьба! Этот день невозможно представить без самых близких для нас
@@ -43,7 +44,7 @@
       }"
     >
       <h2
-        class="text-[20px] leading-[30px] text-center tracking-[-0.03em] mt-[20px] font-[500]"
+        class="text-[clamp(17px,5.3vw,20px)] xl:text-[clamp(30px,3.7vw,35px)] leading-[130%] text-center tracking-[-0.03em] mt-[20px] font-[500]"
       >
         Июнь 2026
       </h2>
