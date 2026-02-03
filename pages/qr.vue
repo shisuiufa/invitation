@@ -1,4 +1,19 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+useHead({
+  link: [
+    {
+      rel: "preload",
+      as: "image",
+      href: "/images/qr.png",
+    },
+    {
+      rel: "preload",
+      as: "image",
+      href: "/images/family.png",
+    },
+  ],
+});
+</script>
 
 <template>
   <div
