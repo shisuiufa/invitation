@@ -55,17 +55,17 @@ onMounted(() => {
     />
 
     <Transition
-        enter-active-class="transition-all duration-300 ease-out"
-        enter-from-class="opacity-0 scale-90"
-        enter-to-class="opacity-100 scale-100"
-        leave-active-class="transition-all duration-300 ease-in"
-        leave-from-class="opacity-100 scale-100"
-        leave-to-class="opacity-0 scale-90"
+      enter-active-class="transition-all duration-300 ease-out"
+      enter-from-class="opacity-0 scale-90"
+      enter-to-class="opacity-100 scale-100"
+      leave-active-class="transition-all duration-300 ease-in"
+      leave-from-class="opacity-100 scale-100"
+      leave-to-class="opacity-0 scale-90"
     >
       <PlayButton
-          v-if="showPlayButton && !isPlaying"
-          class="absolute z-[10] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
-          @click="playVideo"
+        v-if="showPlayButton && !isPlaying"
+        class="absolute z-[10] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+        @click="playVideo"
       />
     </Transition>
 

@@ -42,9 +42,9 @@
 }
 
 @font-face {
-    font-family: "Merienda";
-    src: url("/assets/fonts/Merienda-VariableFont_wght.ttf") format("truetype");
-    font-weight: 300 900;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Merienda";
+  src: url("/assets/fonts/Merienda-VariableFont_wght.ttf") format("truetype");
+  font-weight: 300 900;
+  font-style: normal;
+  font-display: swap;
 }

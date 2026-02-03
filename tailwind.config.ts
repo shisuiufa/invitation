@@ -50,19 +50,19 @@ export default {
       },
       boxShadow: {
         card: "2px 4px 4px rgba(0,0,0,0.25)",
-        soft: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)',
-        softNoTop: '0px 4px 4px -4px rgba(0, 0, 0, 0.25)',
-        softNoBottom: '0px -4px 4px -4px rgba(0, 0, 0, 0.25)',
+        soft: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
+        softNoTop: "0px 4px 4px -4px rgba(0, 0, 0, 0.25)",
+        softNoBottom: "0px -4px 4px -4px rgba(0, 0, 0, 0.25)",
       },
     },
   },
-    plugins: [
-        plugin(function ({ addUtilities }) {
-            addUtilities({
-                ".text-shadow-soft": {
-                    textShadow: "2px 6px 6px rgba(0, 0, 0, 0.25)",
-                },
-            });
-        }),
-    ],
+  plugins: [
+    plugin(function ({ addUtilities }) {
+      addUtilities({
+        ".text-shadow-soft": {
+          textShadow: "2px 6px 6px rgba(0, 0, 0, 0.25)",
+        },
+      });
+    }),
+  ],
 };

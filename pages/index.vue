@@ -58,33 +58,29 @@ const unlock = () => {
 <template>
   <div :class="locked ? 'overflow-hidden' : 'overflow-auto'">
     <Transition
-        leave-active-class="transition-all duration-400 ease-in"
-        leave-from-class="opacity-100 translate-y-0"
-        leave-to-class="opacity-0 -translate-y-6"
+      leave-active-class="transition-all duration-400 ease-in"
+      leave-from-class="opacity-100 translate-y-0"
+      leave-to-class="opacity-0 -translate-y-6"
     >
-      <UnlockSection
-          v-if="locked"
-          key="unlock"
-          @unlock="unlock"
-      />
+      <UnlockSection v-if="locked" key="unlock" @unlock="unlock" />
     </Transition>
 
     <Transition
-        enter-active-class="transition-opacity duration-1000 ease-in"
-        enter-from-class="opacity-0"
-        enter-to-class="opacity-100"
-        appear
+      enter-active-class="transition-opacity duration-1000 ease-in"
+      enter-from-class="opacity-0"
+      enter-to-class="opacity-100"
+      appear
     >
       <div v-if="!locked" class="h-full pb-[12px]">
         <MainSection />
         <UiContainer>
           <div class="bg-white/70 shadow-soft pb-[57px] rounded-b-full">
             <IntroSection />
-            <LocationSection class="mt-[29px]"/>
-            <DressCodeSection class="mt-[35px]"/>
-            <ScheduleSection class="mt-[43px]"/>
-            <WishesSection class="mt-[57px]"/>
-            <FooterSection class="mt-[57px]"/>
+            <LocationSection class="mt-[29px]" />
+            <DressCodeSection class="mt-[35px]" />
+            <ScheduleSection class="mt-[43px]" />
+            <WishesSection class="mt-[57px]" />
+            <FooterSection class="mt-[57px]" />
           </div>
         </UiContainer>
       </div>
