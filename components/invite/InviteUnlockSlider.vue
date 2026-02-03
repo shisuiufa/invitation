@@ -10,6 +10,26 @@ const isUnlocked = ref(false);
 
 const MAX_SLIDE = 160;
 
+const unlockSound = new Audio("/sounds/unlock.mp3");
+unlockSound.preload = "auto";
+
+let soundUnlocked = false;
+
+const warmupSound = async () => {
+  if (soundUnlocked) return;
+  try {
+    unlockSound.muted = true;
+    unlockSound.currentTime = 0;
+    await unlockSound.play();
+    unlockSound.pause();
+    unlockSound.currentTime = 0;
+    unlockSound.muted = false;
+    soundUnlocked = true;
+  } catch (e) {
+    console.log("warmup blocked", e);
+  }
+};
+
 const start = (e: MouseEvent | TouchEvent) => {
   isDragging.value = true;
   startX.value = e instanceof TouchEvent ? e.touches[0].clientX : e.clientX;
@@ -37,6 +57,8 @@ const end = () => {
 const unlock = () => {
   slider.value = MAX_SLIDE;
   isUnlocked.value = true;
+  unlockSound.currentTime = 0;
+  unlockSound.play().catch((e) => console.log("play blocked", e));
   emits("unlock");
 };
 
@@ -58,6 +80,8 @@ onUnmounted(() => {
 <template>
   <div
     class="relative bg-[#CACFD28C] p-1 rounded-full flex items-center h-fit select-none"
+    @touchstart.passive="warmupSound"
+    @pointerdown="warmupSound"
   >
     <InviteUnlockButton :x="slider" @start="start" />
 

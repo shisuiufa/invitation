@@ -10,9 +10,6 @@ const showUI = ref(false);
 const hideUI = ref(false);
 const isPlaying = ref(false);
 
-const unlockSound = new Audio("/sounds/unlock.mp3");
-unlockSound.preload = "auto";
-
 const playVideo = () => {
   const video = videoRef.value?.video;
   if (!video) return;
@@ -32,8 +29,6 @@ const onTimeUpdate = () => {
 
 const unlock = () => {
   hideUI.value = true;
-  unlockSound.currentTime = 0;
-  unlockSound.play().catch(() => {});
   setTimeout(() => {
     emits("unlock");
   }, 100);
@@ -47,10 +42,10 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="w-full h-[100vh] overflow-hidden">
+  <div class="w-full h-[100svh] overflow-hidden">
     <InviteVideo
       ref="videoRef"
-      class="absolute z-[5] inset-0 w-full h-full object-cover pointer-events-none select-none"
+      class="z-[5] w-full h-full pointer-events-none select-none"
       @timeupdate="onTimeUpdate"
     />
 

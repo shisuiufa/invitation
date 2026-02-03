@@ -8,7 +8,7 @@ onMounted(() => {
 
 <template>
   <div
-    class="bg-[url('/images/bg.png')] bg-cover bg-center bg-no-repeat h-screen md:h-full md:min-h-screen flex flex-col"
+    class="bg-[url('/images/bg.png')] bg-cover bg-center bg-no-repeat h-[100svh] md:h-[100svh] md:min-h-[100svh] flex flex-col"
   >
     <UiContainer class="relative h-full flex flex-col grow">
       <Transition

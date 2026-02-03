@@ -57,7 +57,10 @@ const unlock = () => {
 </script>
 
 <template>
-  <div :class="locked ? 'overflow-hidden' : 'overflow-auto'">
+  <div
+    class="h-[100svh]"
+    :class="locked ? 'overflow-hidden' : 'overflow-auto pb-[20px]'"
+  >
     <Transition
       leave-active-class="transition-all duration-400 ease-in"
       leave-from-class="opacity-100 translate-y-0"
@@ -71,7 +74,7 @@ const unlock = () => {
       enter-to-class="opacity-100"
       appear
     >
-      <div v-if="!locked" class="h-full pb-[12px]">
+      <div v-if="!locked">
         <MainSection />
         <UiContainer>
           <div

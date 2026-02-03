@@ -17,7 +17,7 @@ useHead({
 
 <template>
   <div
-    class="flex gap-[clamp(30px,2.7vw,50px)] h-screen pointer-events-none select-none"
+    class="flex gap-[clamp(30px,2.7vw,50px)] h-[100svh] pointer-events-none select-none"
   >
     <img
       class="hidden xl:block w-[30%] h-full object-cover object-[50%_30%]"
