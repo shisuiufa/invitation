@@ -64,7 +64,7 @@ onUnmounted(() => {
     <div class="relative z-[1] w-16 h-16 opacity-0"></div>
 
     <h1
-      class="font-anon text-center text-xl text-neutral w-full transition-opacity duration-200 text-shadow-soft"
+      class="font-ysa text-center text-xl text-neutral w-full transition-opacity duration-200 text-shadow-soft"
       :class="
         isDragging
           ? 'opacity-0'

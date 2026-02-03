@@ -20,7 +20,7 @@ useHead({
     class="flex gap-[clamp(30px,2.7vw,50px)] h-screen pointer-events-none select-none"
   >
     <img
-      class="w-[30%] h-full object-cover object-[50%_30%]"
+      class="hidden xl:block w-[30%] h-full object-cover object-[50%_30%]"
       src="/images/family.png"
       alt="family"
     />

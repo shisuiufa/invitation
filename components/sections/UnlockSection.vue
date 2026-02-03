@@ -50,7 +50,7 @@ onMounted(() => {
   <div class="w-full h-[100vh] overflow-hidden">
     <InviteVideo
       ref="videoRef"
-      class="absolute z-[5] inset-0 w-full h-full object-cover"
+      class="absolute z-[5] inset-0 w-full h-full object-cover pointer-events-none select-none"
       @timeupdate="onTimeUpdate"
     />
 
